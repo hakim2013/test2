@@ -1,13 +1,23 @@
 plugins {
-    id "org.ajoberstar.git-publish" version "2.0.0"
-}
+    id "com.alexleventer.slack" version "1.0.4"
+   id "info.solidsoft.pitest" version "1.3.0"
+    id "com.dorongold.task-tree" version "1.3.1"
 
-group 'Test2'
-version '1.0-SNAPSHOT'
+
+
+
+    }
+
+group 'Test33'
+
+
+
+
 
 apply plugin: 'java'
+//apply plugin: 'jacoco'
 
-sourceCompatibility = 1.8
+//sourceCompatibility = 1.8
 
 repositories {
     mavenCentral()
@@ -15,4 +25,54 @@ repositories {
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+
+slack {
+    webhookUrl "https://hooks.slack.com/services/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"
+    username "Gradle"
+    shouldMonitor "uploadArchives"
+}
+
+uploadArchives {
+    repositories {
+        maven {
+            url "https://mymavenrepo.com/repo/cEmjfkxugPlzLxXg1A2B"
+            credentials {
+                username "myMavenRepo"
+                password "test0005"
+            }
+        }
+    }
+}
+
+/*
+jacocoTestReport {
+    reports {
+        xml.enabled false
+        csv.enabled false
+        html.destination file("build/jacocoHtml")
+    }
+}
+
+jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            limit {
+                minimum = 0.4            }
+        }
+
+    }
+}
+*/
+//test.finalizedBy("jacocoTestCoverageVerification")
+
+pitest {
+    targetClasses = ['com.example.*']
+}
+
+
+task hello <<{
+    println("${version}")
+
 }
