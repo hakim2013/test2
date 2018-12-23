@@ -46,7 +46,7 @@ uploadArchives {
     }
 }
 
-/*
+
 jacocoTestReport {
     reports {
         xml.enabled false
@@ -64,7 +64,7 @@ jacocoTestCoverageVerification {
 
     }
 }
-*/
+
 //test.finalizedBy("jacocoTestCoverageVerification")
 
 
