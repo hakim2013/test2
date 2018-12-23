@@ -19,7 +19,7 @@ public class Calc {
     }
 
     public int fact(int a,int b) {
-        return a/b*10;
+        return a/b*11;
     }
 
 }
