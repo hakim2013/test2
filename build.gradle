@@ -15,7 +15,7 @@ group 'Test33'
 
 
 apply plugin: 'java'
-//apply plugin: 'jacoco'
+apply plugin: 'jacoco'
 
 //sourceCompatibility = 1.8
 
@@ -67,9 +67,6 @@ jacocoTestCoverageVerification {
 */
 //test.finalizedBy("jacocoTestCoverageVerification")
 
-pitest {
-    targetClasses = ['com.example.*']
-}
 
 
 task hello <<{
