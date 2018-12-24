@@ -2,6 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19433a0d-3548-4403-ba21-669641ffd27f" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/fileHashes.bin" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.10.2/fileHashes/fileHashes.lock" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Test2.iml" afterPath="$PROJECT_DIR$/.idea/modules/Test2.iml" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Test2_main.iml" afterPath="$PROJECT_DIR$/.idea/modules/Test2_main.iml" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/Test2_test.iml" afterPath="$PROJECT_DIR$/.idea/modules/Test2_test.iml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -285,8 +291,8 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="4633329377000" />
-        <entry key="$PROJECT_DIR$/build.gradle" value="1255752548" />
+        <entry key="$PROJECT_DIR$" value="4633331506000" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="3276472207" />
         <entry key="$PROJECT_DIR$/gradle.properties" value="4178595317" />
         <entry key="$PROJECT_DIR$/settings.gradle" value="4180756495" />
       </map>
@@ -464,6 +470,11 @@
             </path>
             <path>
               <item name="Test2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Test2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Test2" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
@@ -587,7 +598,7 @@
     </configuration>
   </component>
   <component name="SbtLocalSettings">
-    <option name="lastUpdateTimestamp" value="1545648591477" />
+    <option name="lastUpdateTimestamp" value="1545650720166" />
     <option name="externalProjectsViewState">
       <projects_view />
     </option>
