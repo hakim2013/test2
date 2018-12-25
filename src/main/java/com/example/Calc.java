@@ -22,4 +22,8 @@ public class Calc {
         return a/b*11;
     }
 
+
+    public int fact3(int a,int b) {
+        return a/b*12;
+    }
 }
