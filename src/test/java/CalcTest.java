@@ -14,7 +14,7 @@ public class CalcTest {
     @Test
     public void mult() {
 
-        assertEquals(7,new Calc().mul(2,5));
+        assertEquals(10,new Calc().mul(2,5));
     }
 
 

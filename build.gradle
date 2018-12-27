@@ -6,7 +6,7 @@ plugins {
 
     }
 
-group 'Test7777888'
+group 'test 3'
 
 
 
@@ -31,14 +31,15 @@ slack {
     shouldMonitor "uploadArchives"
 }
 
+
 uploadArchives {
     repositories {
         maven {
-            url "https://mymavenrepo.com/repo/cEmjfkxugPlzLxXg1A2B"
             credentials {
                 username "myMavenRepo"
                 password "test0005"
             }
+            url "https://mymavenrepo.com/repo/cEmjfkxugPlzLxXg1A2B/"
         }
     }
 }
