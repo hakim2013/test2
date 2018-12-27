@@ -20,23 +20,6 @@ pipeline {
                 waitForQualityGate abortPipeline: true
             }
         }
-   /* stage('Analysis') {
-    environment {
-        scannerHome = tool 'SonarQubeScanner'
-    }
-    steps {
-        withSonarQubeEnv('sonarqube') {
-            sh "${scannerHome}/bin/sonar-scanner"
-        }
-<<<<<<< HEAD
-        timeout(time: 2, unit: 'MINUTES') {
-=======
-           timeout(time: 2, unit: 'MINUTES') {
->>>>>>> b958bdf5a5f603e359db214cffb0bda0bbdb9667
-            waitForQualityGate abortPipeline: true
-        }
-    }
-}*/
     
     
     stage('Deploy') {
