@@ -10,7 +10,17 @@ pipeline {
       }
     }
 
-    stage('Analysis') {
+    stage('SonarQube analysis 2') {
+            steps {
+                sh 'gradle sonarqube'
+            }
+        }
+        stage("Quality Gate 2") {
+            steps {
+                waitForQualityGate abortPipeline: true
+            }
+
+   /* stage('Analysis') {
     environment {
         scannerHome = tool 'SonarQubeScanner'
     }
@@ -18,9 +28,11 @@ pipeline {
         withSonarQubeEnv('sonarqube') {
             sh "${scannerHome}/bin/sonar-scanner"
         }
+        timeout(time: 2, unit: 'MINUTES') {
             waitForQualityGate abortPipeline: true
+        }
     }
-}
+}*/
     
     
     stage('Deploy') {
