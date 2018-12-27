@@ -11,4 +11,11 @@ public class CalcTest {
     assertEquals(7,new Calc().add(2,5));
     }
 
+    @Test
+    public void mult() {
+
+        assertEquals(7,new Calc().mul(2,5));
+    }
+
+
 }
