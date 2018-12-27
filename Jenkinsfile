@@ -15,11 +15,11 @@ pipeline {
                 sh 'gradle sonarqube'
             }
         }
-        stage("Quality Gate 2") {
+      /*  stage("Quality Gate 2") {
             steps {
                 waitForQualityGate abortPipeline: true
             }
-        }
+        } */
     
     
     stage('Deploy') {
