@@ -19,7 +19,7 @@ pipeline {
             steps {
                 waitForQualityGate abortPipeline: true
             }
-
+        }
    /* stage('Analysis') {
     environment {
         scannerHome = tool 'SonarQubeScanner'
