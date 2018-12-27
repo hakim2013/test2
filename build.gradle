@@ -7,7 +7,7 @@ plugins {
 
     }
 
-group 'test 3'
+group 'test3'
 
 
 
