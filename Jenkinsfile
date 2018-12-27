@@ -9,7 +9,7 @@ pipeline {
     }
     stage('Notification') {
       steps {
-        mail(subject: 'Notification', body: 'Bonjour Jenkins', bcc: 'h_mokeddem@esi')
+        mail(subject: 'Notification', body: 'Bonjour Jenkins', bcc: 'h_mokeddem@esi.dz')
       }
     }
   }
