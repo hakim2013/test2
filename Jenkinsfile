@@ -36,7 +36,7 @@ pipeline {
 stage('Upload')
         {
             steps {
-        
+              script {
             ftpPublisher alwaysPublishFromMaster: true, 
             continueOnError: false, failOnError: false, 
             publishers: [configName: 'MyFtpServer', transfers: [
@@ -51,6 +51,7 @@ stage('Upload')
                 useWorkspaceInPromotion: false, verbose: true]
             }
         }
+          }
     
     
     
