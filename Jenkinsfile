@@ -8,12 +8,13 @@ pipeline {
       }
     }
     stage('Analysis') {
-      environment {
-        scannerHome = 'SonarQubeScanner'
-      }
+     /* environment {
+     /   scannerHome = 'SonarQubeScanner'
+      } */
       steps {
         withSonarQubeEnv('sonarqube') {
-          sh "${scannerHome}/bin/sonar-scanner"
+         // sh "${scannerHome}/bin/sonar-scanner"
+           sh "sonar-scanner"
         }
 
         waitForQualityGate true
