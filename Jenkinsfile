@@ -33,10 +33,10 @@ pipeline {
     }
 }     
     
-  stage('Upload')
+stage('Upload')
         {
             steps {
-                 script {
+        
             ftpPublisher alwaysPublishFromMaster: true, 
             continueOnError: false, failOnError: false, 
             publishers: [configName: 'MyFtpServer', transfers: [
@@ -46,11 +46,11 @@ pipeline {
                     patternSeparator: '[, ]+', 
                     remoteDirectory: "My Storage", 
                     remoteDirectorySDF: false, removePrefix: '', 
-                    sourceFiles: '**.jar]
+                    sourceFiles: '**.jar']
                 ], usePromotionTimestamp: false, 
                 useWorkspaceInPromotion: false, verbose: true]
             ]
-        }  
+      
             }
         }
     
