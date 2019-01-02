@@ -35,6 +35,7 @@ pipeline {
  
 stage('Upload')
         {
+          steps {
             script {
         
             ftpPublisher alwaysPublishFromMaster: true, 
@@ -50,7 +51,7 @@ stage('Upload')
                 ], usePromotionTimestamp: false, 
                 useWorkspaceInPromotion: false, verbose: true]
             
-      
+            }
             }
         }
     
