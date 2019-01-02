@@ -31,23 +31,9 @@ pipeline {
         }
             waitForQualityGate abortPipeline: true
     }
-}
-    
- stage('Upload')
-        {
-            ftpPublisher alwaysPublishFromMaster: true, continueOnError: false, failOnError: false, publishers: [
-                [configName: 'MyFtpServer', transfers: [
-                    [asciiMode: false, cleanRemote: false, excludes: '', flatten: false, makeEmptyDirs: false, 
-                    noDefaultExcludes: false,
-                    patternSeparator: '[, ]+', remoteDirectory: "My Storage", remoteDirectorySDF: false, removePrefix: '', 
-                    sourceFiles: '**.jar]
-                ], usePromotionTimestamp: false, useWorkspaceInPromotion: false, verbose: true]
-            ]
-        }   
-    
-    
-    
+}     
   }
+  
   post {
     always {
       echo 'Build stage complete'
