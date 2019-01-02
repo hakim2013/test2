@@ -49,8 +49,6 @@ stage('Upload')
                     sourceFiles: '**.jar']
                 ], usePromotionTimestamp: false, 
                 useWorkspaceInPromotion: false, verbose: true]
-            ]
-      
             }
         }
     
