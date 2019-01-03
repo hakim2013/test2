@@ -15,7 +15,10 @@ public class Calc {
     }
 
     public int div(int a,int b) {
-        return a/b;
+        int c = 0;
+        c = c + 1 ;
+        c = a+b+c;
+        return c;
     }
 
     public int fact(int a,int b) {
