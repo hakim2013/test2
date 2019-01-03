@@ -19,8 +19,15 @@ public class CalcTest {
     
       @Test
     public void sub() {
-
+        
         assertEquals(2,new Calc().sub(5,3));
+    }
+    
+    
+     @Test
+    public void add2() {
+
+    assertEquals(7,new Calc().add(2,5));
     }
 
 
