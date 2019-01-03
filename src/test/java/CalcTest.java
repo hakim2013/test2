@@ -16,6 +16,12 @@ public class CalcTest {
 
         assertEquals(10,new Calc().mul(2,5));
     }
+    
+      @Test
+    public void sub() {
+
+        assertEquals(2,new Calc().sub(5,3));
+    }
 
 
 }
