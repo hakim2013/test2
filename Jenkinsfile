@@ -16,8 +16,10 @@ pipeline {
         waitForQualityGate true
       }
     }
-    stage('Upload') {
-  
+    stage('Upload') {     
+      when { // si la branche production
+      branch 'master'
+} 
       steps {
         archiveArtifacts 'build/libs/*.jar'
       }
