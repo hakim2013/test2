@@ -14,8 +14,8 @@ public class Calc {
         return a-b;
     }
 
-    public int div(int a,int b) {
-        return a/b;
+    public int div33(int a,int b) {
+        return a+b+44;
     }
 
     public int fact(int a,int b) {
