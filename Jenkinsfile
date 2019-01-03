@@ -17,6 +17,9 @@ pipeline {
       }
     }
     stage('Upload') {
+      when { // si la branche production
+      branch 'master'
+    }
      
         archiveArtifacts 'build/libs/*.jar'
       }
