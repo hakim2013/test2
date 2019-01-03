@@ -18,12 +18,12 @@ public class Calc {
         return a+b+44;
     }
 
-    public int fact(int a,int b) {
-        return a/b*11;
+    public int fact343(int a,int b) {
+        return a/b+11;
     }
 
 
     public int fact3(int a,int b) {
-        return a/b*12;
+        return a/b+12;
     }
 }
